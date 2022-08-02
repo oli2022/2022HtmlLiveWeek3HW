@@ -27,8 +27,14 @@ LV5：所有頁面都有設計
 作業須符合此作業規範
 
 ## 第 1 頁 / 共 25 頁
-
+讓圖片去掉週邊的區塊
+```css
+img{
+  display: block;
+}
+```
 ### wrap 最外層
+
 ### header
 logo 要連結並藏h1
 ```css
@@ -61,4 +67,12 @@ text-decoration: none;
 行距1.5倍
 ```css 
 line-height: 24px;
+```
+
+## product
+
+## joinProduct
+文字置中
+```css
+text-align: center;
 ```

@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
+img{
+    display: block;
+    }
 /* css reset End */
 
 .wrap {
@@ -89,7 +92,6 @@ table {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/30px var(--unnamed-font-family-source-han-sans-tw);
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -102,12 +104,12 @@ table {
 .bannerFont36 {
     font-size: 36px;
     color: #650300;
-    font: 思源黑體 TW,Regular
+    font: "思源黑體 TW",Regular
 }
 .bannerFont64 {
     font-size: 64px;
     color: #650300;
-    font:思源黑體 TW,bold;
+    font:"思源黑體 TW",bold;
     font-weight: bold;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -140,13 +142,14 @@ table {
 .introduce h2{
     font-size: 48px;
     color: #650300;
-    font: 思源黑體 TW;
+    font: "思源黑體 TW";
     font-weight: bold;
+    padding-bottom: 32.33px;
 }
 .introduce span {
     font-size: 24px;
     color: #650300;
-    font: 思源黑體 TW;
+    font: "思源黑體 TW";
     font-weight: bold;
     text-align: center;
     padding-bottom: 8px;
@@ -154,14 +157,16 @@ table {
 .introduce p {
     font-size: 16px;
     color:#000000;
-    font: 思源黑體 TW;
+    font: "思源黑體 TW";
     line-height: 24px;
+    padding-bottom: 80px;
 }
 .introduce {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
+    background-color: #FBF2F2;
 }
 .introduce ul {
     width: 70%;
@@ -173,5 +178,264 @@ table {
     flex-direction: column;
     padding: 12px;
 }
-
+.introduce ul li img {
+    width: 26.70%;
+    margin: 0 auto;
+    padding-bottom: 24.33px;
+}
 /* introduce */
+
+/* product */
+.product {
+    padding-bottom: 80px;
+}
+.product h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #650300;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 36px;
+}
+.product ul {
+    display: flex;
+    justify-content: center;
+}
+.product ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product ul li a img {
+    max-width: 416px;
+    padding: 12px;
+}
+.product ul li p{
+    font-size: 48px;
+    color: #AA0601;
+    font: italic normal 900 48px Roboto;
+}
+/* product */
+
+/* joinProduct */
+.joinProduct {
+    background-image: url(/作業-第三週-眼鏡行形象網站/imgs/index-bg.png);
+    background-size: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.joinProduct h2 {
+    color: #FFFFFF;
+    font: "思源黑體 TW";
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 48px;
+}
+.joinProduct ul {
+    display: flex;
+    justify-content: center;
+}
+.joinProduct ul li {
+    border: 1px solid #E0E0E0;
+}
+.joinProduct ul li a {
+    text-decoration: none;
+}
+.joinProduct ul li a img {
+    max-width: 648px;
+}
+.joinProduct ul li a p {
+    color:#FFFFFF;
+    font-size: 48px;
+    font: italic normal 900 48px/72px Roboto;
+    background-color: #fff;
+    color: #AA0601;
+    text-align: center;
+}
+/* joinProduct */
+
+/* customer */
+.customer h2{
+    font-size: 48px;
+    color: #650300;
+    font: "思源黑體 TW";
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 36px;
+}
+.customer ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 68px;
+}
+.customer ul li {
+    display: flex;
+    flex-direction: column;
+    max-width:307px;
+    margin: 12px;
+    border: 1px solid #DEE2E6;
+    box-shadow: 0px 2px 6px #00000029;
+
+}
+.customer ul li h3 {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+}
+.customerP1 {
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height:21px;
+}
+.customerP2 {
+    font-size: 14px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-top: 48px;
+    color: #707070;
+}
+/* customer */
+
+/* contact */
+.contact {
+    
+    background-color: #FBF2F2;
+}
+.contact ul {
+    width: 33%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #650300;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 48px;
+    
+}
+.contactUl li {
+    width: 100%;
+    padding-bottom: 16px;
+    font-size: 20px;
+}
+.contactUl li input {
+    width: 100%;
+    font-size: 16px;
+    height: 36px;
+}
+.contactUl li textarea {
+    width: 100%;
+    height: 136px;
+}
+.contactFont20 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.contactFont16 {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+.contact button {
+    font-size: 16px;
+    text-align: center;
+}
+.contactUl2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.contactUl2But  input {
+    background-color: #AA0601;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding-left: 176px;
+    padding-right: 176px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 48px;
+}
+/* contact */
+
+/* footer */
+.footer {
+    background-color: #AA0601;
+}
+.footerFirst {
+    padding-left: 312px;
+    padding-right: 312px;
+    padding-top: 60.2px;
+}
+.footerSecond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerSecond img {
+    width: 48px;
+    padding-left: 32px;
+}
+.footerSecond a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.footerThird {
+    display: flex;
+    justify-content: center;
+    padding-button: 35.98px;
+}
+.footerThirdTwo {
+    display: flex;
+    justify-content: center;
+}
+.footerThird li {
+    padding-right: 48px;
+}
+.footerSecondTwo a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 36px;
+}
+.fa-phone {
+    color: #FFFFFF;
+    font-size: 36px;
+    padding-right: 6px;
+}
+.fa-envelope-circle-check {
+    color: #FFFFFF;
+    font-size: 36px;
+    padding-right: 6px;
+}
+.footerSecondTwo li {
+    padding-bottom: 8px;
+}
+.footerSecondThird {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footerSecondThird a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footerUl2_1_1 {
+    display: flex;
+    justify-content: end;
+
+}
+.footerUl2_1_1 li {
+    padding-left: 21px;
+}
+/* footer */
+
