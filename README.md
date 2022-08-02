@@ -30,8 +30,35 @@ LV5：所有頁面都有設計
 
 ### wrap 最外層
 ### header
-logo 要連結藏h1
-
+logo 要連結並藏h1
+```css
+    text-indent: 101%; /* 首行縮排*/
+    white-space: nowrap;    /* 不要讓文字斷行*/
+    overflow: hidden;   /*把文字隱藏起來*/
+```
+連結去底線
+```css
+text-decoration: none;
+```
 ## banner 
 "立即購買"要連結
 
+文字疊在圖片上面
+```css
+.banner img {
+    position: relative;
+    z-index: 1;
+}
+.banner ul {
+    width: 80%;
+    position:absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+```
+## introduce
+行距1.5倍
+```css 
+line-height: 24px;
+```

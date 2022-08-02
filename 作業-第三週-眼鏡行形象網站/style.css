@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css reset End */
+
+.wrap {
+    margin: 0 auto;
+    width: 95.239%;
+}
+/* header */
+.header {
+    background-color:#AA0601;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 312px;
+    padding-right: 312px;
+    
+}
+.header h1 a {
+    background-image: url(/作業-第三週-眼鏡行形象網站/imgs/logo-white.png);
+    background-size: 100%;
+    width: 80px;
+    height: 48px; 
+    display: block; 
+    text-indent: 101%; /* 首行縮排*/
+    white-space: nowrap;    /* 不要讓文字斷行*/
+    overflow: hidden;   /*把文字隱藏起來*/
+}
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header ul li {
+    padding-left: 64px;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.header ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/30px var(--unnamed-font-family-source-han-sans-tw);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+/* header */
+
+/* banner */
+.banner img {
+    width: 100%;
+}
+.bannerFont36 {
+    font-size: 36px;
+    color: #650300;
+    font: 思源黑體 TW,Regular
+}
+.bannerFont64 {
+    font-size: 64px;
+    color: #650300;
+    font:思源黑體 TW,bold;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.bannderFont20 a {
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #AA0601;
+    padding: 6px 12px 6px;
+    text-decoration: none;
+}
+.banner ul{
+    text-align: right;
+    padding-top: 350px;
+}
+.banner img {
+    position: relative;
+    z-index: 1;
+}
+.banner ul {
+    width: 80%;
+    position:absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+/* banner */
+
+/* introduce */
+.introduce h2{
+    font-size: 48px;
+    color: #650300;
+    font: 思源黑體 TW;
+    font-weight: bold;
+}
+.introduce span {
+    font-size: 24px;
+    color: #650300;
+    font: 思源黑體 TW;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.introduce p {
+    font-size: 16px;
+    color:#000000;
+    font: 思源黑體 TW;
+    line-height: 24px;
+}
+.introduce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+.introduce ul {
+    width: 70%;
+    display: flex;
+}
+.introduce ul li {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+/* introduce */
