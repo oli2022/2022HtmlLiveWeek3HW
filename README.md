@@ -2,6 +2,8 @@
 
 [第三週作業](https://xd.adobe.com/view/5b20cbc4-5c64-4b67-814e-633b078a8cd4-0e73/grid/)  
 
+[第三週作業-首頁](https://oli2022.github.io/2022HtmlLiveWeek3HW/%E4%BD%9C%E6%A5%AD-%E7%AC%AC%E4%B8%89%E9%80%B1-%E7%9C%BC%E9%8F%A1%E8%A1%8C%E5%BD%A2%E8%B1%A1%E7%B6%B2%E7%AB%99/index.html)
+
 ## 繳交內容
 您的 Discord 名稱
 您的作業等級，請見下方等級表，例如 LV1

@@ -390,7 +390,7 @@ img{
 .footerThird {
     display: flex;
     justify-content: center;
-    padding-button: 35.98px;
+    padding-bottom: 35.98px;
 }
 .footerThirdTwo {
     display: flex;
