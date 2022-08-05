@@ -95,6 +95,12 @@ img{
     padding-top: 25px;
     padding-bottom: 25px;
 }
+@media(max-width:767px) {
+    .header {
+        padding-left: 36px;
+        padding-right: 30px;
+    }
+}
 /* header */
 
 /* banner */
@@ -136,6 +142,15 @@ img{
     display: flex;
     flex-direction: column;
 }
+@media(max-width: 767px){
+    #imgs {
+        content: url("../作業-第三週-眼鏡行形象網站/imgs/home-header-sm.png")
+    }
+    .banner ul {
+        width: 90%;
+    }
+}
+
 /* banner */
 
 /* introduce */
@@ -172,11 +187,26 @@ img{
     width: 70%;
     display: flex;
 }
+@media(max-width: 767px){
+    .introduce ul {
+        width: 90%;
+    }
+}
+@media(max-width: 767px){
+    .introduce ul {
+        flex-wrap: wrap;
+    }
+}
 .introduce ul li {
     width: 30%;
     display: flex;
     flex-direction: column;
     padding: 12px;
+}
+@media(max-width:767px) {
+    .introduce ul li {
+        width: 45%;
+    }
 }
 .introduce ul li img {
     width: 26.70%;
@@ -185,7 +215,7 @@ img{
 }
 /* introduce */
 
-/* product */
+/* product 產品 */
 .product {
     padding-bottom: 80px;
 }
@@ -215,6 +245,12 @@ img{
     color: #AA0601;
     font: italic normal 900 48px Roboto;
 }
+@media(max-width: 767px){
+    .product ul {
+        flex-wrap: wrap;
+    }
+    
+}
 /* product */
 
 /* joinProduct */
@@ -236,6 +272,17 @@ img{
 .joinProduct ul {
     display: flex;
     justify-content: center;
+}
+@media(max-width: 767px){
+    .joinProduct {
+        background-image: url("../作業-第三週-眼鏡行形象網站/imgs/index-bg-sm.png");
+    }
+    .joinProduct ul {
+        flex-wrap: wrap;
+    }
+    .joinProduct ul li {
+        padding-bottom: 24px;
+    }
 }
 .joinProduct ul li {
     border: 1px solid #E0E0E0;
@@ -270,6 +317,11 @@ img{
     display: flex;
     justify-content: center;
     padding-bottom: 68px;
+}
+@media(max-width: 767px){
+    .customer ul {
+        flex-wrap: wrap;
+    }
 }
 .customer ul li {
     display: flex;
@@ -310,6 +362,11 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+@media(max-width: 767px){
+    .contact ul {
+        width: 90%;
+    }
 }
 .contact h2 {
     font-size: 48px;
@@ -373,14 +430,30 @@ img{
     padding-right: 312px;
     padding-top: 60.2px;
 }
+@media(max-width: 767px){
+    .footerFirst {
+        padding-left: 36px;
+        padding-right: 40px;
+    }
+}
 .footerSecond {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+@media(max-width: 767px){
+    .footerSecond {
+        padding-bottom: 30px;
+    }
+}
 .footerSecond img {
     width: 48px;
     padding-left: 32px;
+}
+@media(max-width: 767px){
+    .footerSecond img {
+        padding-left: 16px;
+    }
 }
 .footerSecond a {
     text-decoration: none;
@@ -392,12 +465,23 @@ img{
     justify-content: center;
     padding-bottom: 35.98px;
 }
+@media(max-width: 767px){
+    .footerThird {
+        padding-bottom: 0px;
+    }
+    
+}
 .footerThirdTwo {
     display: flex;
     justify-content: center;
 }
 .footerThird li {
     padding-right: 48px;
+}
+@media(max-width: 767px){
+    .footerThird li {
+        padding-right: 24px;
+    }
 }
 .footerSecondTwo a {
     color: #FFFFFF;
@@ -413,6 +497,11 @@ img{
     color: #FFFFFF;
     font-size: 36px;
     padding-right: 6px;
+}
+@media(max-width: 767px){
+    .footerSecondTwo {
+        padding-bottom: 30px;
+    }
 }
 .footerSecondTwo li {
     padding-bottom: 8px;

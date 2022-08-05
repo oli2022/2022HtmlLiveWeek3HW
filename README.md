@@ -12,21 +12,21 @@
 
 
 ## 作業等級表
-LV1：只做 header 與 footer 的 RWD
-LV2：任選一頁，僅做 PC 版型（header 與 footer 需含 RWD）
-LV3：任選一頁，整頁都需含 RWD
-LV4：做二~三頁以上的 RWD
-LV5：所有頁面都有設計
+LV1：只做 header 與 footer 的 RWD  
+LV2：任選一頁，僅做 PC 版型（header 與 footer 需含 RWD）  
+LV3：任選一頁，整頁都需含 RWD  
+LV4：做二~三頁以上的 RWD  
+LV5：所有頁面都有設計  
 
 
 ## 作業提醒
-正確設定 container，左右需留 12px 的 padding
-內層容器需以 % 為單位設計，不可以寫死寬度！！！
-伸縮時不可以出現 x 軸與跑版的狀況
-頁數需以實際網站頁數計算
-需至少完成 Lv1 作業需求
-需使用線上圖示 Material Design Icons
-作業須符合此作業規範
+正確設定 container，左右需留 12px 的 padding  
+內層容器需以 % 為單位設計，不可以寫死寬度！！！  
+伸縮時不可以出現 x 軸與跑版的狀況  
+頁數需以實際網站頁數計算  
+需至少完成 Lv1 作業需求  
+需使用線上圖示 Material Design Icons  
+作業須符合此作業規範  
 
 ## 第 1 頁 / 共 25 頁
 讓圖片去掉週邊的區塊
@@ -70,11 +70,24 @@ text-decoration: none;
 ```css 
 line-height: 24px;
 ```
-
 ## product
-
 ## joinProduct
 文字置中
 ```css
 text-align: center;
+```
+
+## 換圖片
+當瀏覽器變大或變小時，會希望呈現的圖片不一樣，可以試試這個方法：
+先在 html 下個 id ，再利用 id 的 content 叫出來。
+
+```html 
+<img id="imgs" src="../作業-第三週-眼鏡行形象網站/imgs/home-header.png" alt="圖片" />
+```
+```css
+@media(max-width: 767px){
+    #imgs {
+        content: url("../作業-第三週-眼鏡行形象網站/imgs/home-header-sm.png")
+    }
+}
 ```
