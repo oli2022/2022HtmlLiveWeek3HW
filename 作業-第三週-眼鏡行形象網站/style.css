@@ -53,24 +53,28 @@ img{
 /* css reset End */
 
 .wrap {
-    margin: 0 auto;
-    width: 95.239%;
-    max-width: 100%;
-    height: auto;
+    max-width:1320px;
+    margin:0 auto;
+}
+@media(max-width:992px){
+    .wrap {
+        max-width: 992px;
+    }
 }
 /* header */
 .header {
     background-color:#AA0601;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
     align-items: center;
-    padding-left: 312px;
-    padding-right: 312px;
-    
+}
+@media(max-width:576px) {
+    .header {
+        justify-content: space-between;
+    }
 }
 .header h1 a {
-    background-image: url(../作業-第三週-眼鏡行形象網站/imgs/logo-white.png);
+    background-image: url(/作業-第三週-眼鏡行形象網站/imgs/logo-white.png);
     background-size: 100%;
     width: 80px;
     height: 48px; 
@@ -79,10 +83,21 @@ img{
     white-space: nowrap;    /* 不要讓文字斷行*/
     overflow: hidden;   /*把文字隱藏起來*/
 }
+@media(max-width:576px) {
+    .header h1 {
+        padding-left: 20px;
+    }   
+}
 .header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 350px;
+}
+@media(max-width:576px) {
+    .header ul {
+        padding-left: 0px;
+    }
 }
 .header ul li {
     padding-left: 64px;
@@ -90,29 +105,84 @@ img{
     padding-top: 25px;
     padding-bottom: 25px;
 }
+@media(max-width:992px){
+    .header ul li {
+        padding-left: 0px;
+    }
+}
 .header ul li a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
     padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 25px;
 }
-@media(max-width:767px) {
-    .header {
-        padding-left: 36px;
-        padding-right: 30px;
+@media(max-width:576px) {
+    .header ul li a {
+        font-size: 18px;
+        padding-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 25px;
     }
 }
+.header ul li a:hover {
+    color: #650300;
+    background-color: #FFFFFF;
+}
+
 /* header */
 
 /* banner */
-.banner img {
-    width: 100%;
+.banner {
+    background-image: url("/作業-第三週-眼鏡行形象網站/imgs/home-header.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@media(max-width:992px){
+    .banner{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 150px;
+    }
+}
+@media(max-width:576px) {
+    .banner {
+        background-image: url("/作業-第三週-眼鏡行形象網站/imgs/home-header-sm.png");
+        padding-right: 30px;
+    }
+}
+.bannerFonts {
+    padding-right: 250px;
+    padding-top:150px;
+    padding-bottom: 230px;
+}
+@media(max-width:992px){
+    .bannerFonts {
+        padding-right: 0px;
+        padding-top: 150px;
+        padding-bottom: 110px;
+    }
+}
+@media(max-width:576px) {
+    .bannerFonts {
+        padding-right: 0px;
+        padding-top:150px;
+        padding-bottom: 230px;
+    }
 }
 .bannerFont36 {
     font-size: 36px;
     color: #650300;
     font: "思源黑體 TW",Regular;
+    text-align: right;
+}
+@media(max-width:992px){
+    .bannerFont36 {
+        font-size: 30px;
+    }
 }
 .bannerFont64 {
     font-size: 64px;
@@ -121,6 +191,13 @@ img{
     font-weight: bold;
     padding-top: 16px;
     padding-bottom: 16px;
+    text-align: right;
+
+}
+@media (max-width:992px){
+    .bannerFont64 {
+        font-size: 50px;
+    }
 }
 .bannderFont20 a {
     font-size: 20px;
@@ -128,31 +205,28 @@ img{
     background: #AA0601;
     padding: 6px 12px 6px;
     text-decoration: none;
+
+}
+.bannderFont20 {
+    text-align: right;
+}
+.bannderFont20 a:hover{
+    color: #AA0601;
+    background-color: #FFFFFF;
 }
 .banner ul{
     text-align: right;
-    padding-top: 350px;
+    padding-top: 330px;
+    padding-bottom: 330px;
 }
-.banner img {
-    position: relative;
-    z-index: 1;
+@media(max-width:992px){
+    
 }
 .banner ul {
     width: 80%;
-    position:absolute;
-    z-index: 2;
     display: flex;
     flex-direction: column;
 }
-@media(max-width: 767px){
-    #imgs {
-        content: url("../作業-第三週-眼鏡行形象網站/imgs/home-header-sm.png")
-    }
-    .banner ul {
-        width: 90%;
-    }
-}
-
 /* banner */
 
 /* introduce */
@@ -178,6 +252,12 @@ img{
     line-height: 24px;
     padding-bottom: 80px;
 }
+@media(max-width:576px) {
+    .introduce p {
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+}
 .introduce {
     display: flex;
     flex-direction: column;
@@ -189,31 +269,41 @@ img{
     width: 70%;
     display: flex;
 }
-@media(max-width: 767px){
+@media(max-width:576px) {
     .introduce ul {
-        width: 90%;
-    }
-}
-@media(max-width: 767px){
-    .introduce ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
 }
 .introduce ul li {
     width: 30%;
-    display: flex;
-    flex-direction: column;
     padding: 12px;
 }
-@media(max-width:767px) {
+@media(max-width:576px) {
     .introduce ul li {
-        width: 45%;
+        width: 40%;
+        padding: 10px;
     }
 }
+
 .introduce ul li img {
     width: 26.70%;
     margin: 0 auto;
     padding-bottom: 24.33px;
+}
+@media(max-width:576px) {
+    .introduce ul li img {
+        /* width: 26.70%; */
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+}
+
+.introduce ul li span {
+    display: block;
+    text-align: center;
 }
 /* introduce */
 
@@ -233,34 +323,60 @@ img{
     display: flex;
     justify-content: center;
 }
+@media(max-width:576px) {
+    .product ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 .product ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .product ul li a img {
-    max-width: 416px;
+    max-width: 90%;
     padding: 12px;
+    border: 1px solid white;
 }
-.product ul li p{
+@media(max-width:992px){
+    .product ul li a img {
+        max-width: 90%;
+    }
+}
+@media(max-width:576px) {
+    .product ul li a img {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+.product ul li a img:hover {
+    border: 1px solid #650300;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+
+}
+.product h3{
     font-size: 48px;
     color: #AA0601;
     font: italic normal 900 48px Roboto;
 }
-@media(max-width: 767px){
-    .product ul {
-        flex-wrap: wrap;
+@media(max-width:992px){
+    .product h3{
+        font-size: 35px;
     }
-    
 }
 /* product */
 
 /* joinProduct */
 .joinProduct {
-    background-image: url(../作業-第三週-眼鏡行形象網站/imgs/index-bg.png);
+    background-image: url(/作業-第三週-眼鏡行形象網站/imgs/index-bg.png);
     background-size: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .joinProduct h2 {
     color: #FFFFFF;
@@ -274,13 +390,24 @@ img{
 .joinProduct ul {
     display: flex;
     justify-content: center;
+    max-width: 80%;
 }
-@media(max-width: 767px){
+@media(max-width:992px){
+    .joinProduct ul {
+        max-width: 80%;
+    }
+}
+@media(max-width:576px) {
     .joinProduct {
-        background-image: url("../作業-第三週-眼鏡行形象網站/imgs/index-bg-sm.png");
+        background-image: url("/作業-第三週-眼鏡行形象網站/imgs/index-bg-sm.png");
+        background-repeat: no-repeat;
+    }
+    .joinProduct h2 {
+        padding-top: 0px;
     }
     .joinProduct ul {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .joinProduct ul li {
         padding-bottom: 24px;
@@ -289,11 +416,20 @@ img{
 .joinProduct ul li {
     border: 1px solid #E0E0E0;
 }
+.joinProduct ul li:hover{
+    border: 1px solid #E0E0E0;
+     /* 透明度設為 0.5 */
+    opacity: 0.5; 
+     /* IE8 與更早的版本 */
+    filter: alpha(opacity=50); 
+    
+}
 .joinProduct ul li a {
     text-decoration: none;
 }
 .joinProduct ul li a img {
-    max-width: 648px;
+    max-width: 100%;
+    
 }
 .joinProduct ul li a p {
     color:#FFFFFF;
@@ -320,19 +456,26 @@ img{
     justify-content: center;
     padding-bottom: 68px;
 }
-@media(max-width: 767px){
+@media(max-width:576px) {
     .customer ul {
         flex-wrap: wrap;
     }
 }
+
 .customer ul li {
     display: flex;
     flex-direction: column;
-    max-width:307px;
     margin: 12px;
     border: 1px solid #DEE2E6;
     box-shadow: 0px 2px 6px #00000029;
-
+}
+@media(max-width:576px) {
+    .customer ul li {
+        max-width: 40%;
+    }
+}
+.customer ul li img {
+    max-width: 100%;
 }
 .customer ul li h3 {
     padding-top: 16px;
@@ -355,19 +498,19 @@ img{
 
 /* contact */
 .contact {
-    
     background-color: #FBF2F2;
+    font-size: 16px;
 }
-.contact ul {
-    width: 33%;
-    margin: 0 auto;
+.contactInputs {
+    width: 30%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
 }
-@media(max-width: 767px){
-    .contact ul {
+@media(max-width:576px) {
+    .contactInputs {
         width: 90%;
+        display: flex;
+        flex-direction: column;
     }
 }
 .contact h2 {
@@ -377,49 +520,44 @@ img{
     text-align: center;
     padding-top: 80px;
     padding-bottom: 48px;
-    
 }
-.contactUl li {
-    width: 100%;
+.contactInputs {
+    margin: 0 auto;
+}
+.contactInputs p{
+    font-size: 20px;
     padding-bottom: 16px;
-    font-size: 20px;
 }
-.contactUl li input {
-    width: 100%;
-    font-size: 16px;
-    height: 36px;
-}
-.contactUl li textarea {
-    width: 100%;
-    height: 136px;
-}
-.contactFont20 {
-    font-size: 20px;
-    line-height: 30px;
-}
-.contactFont16 {
-    font-size: 16px;
-    padding-bottom: 8px;
-}
-.contact button {
-    font-size: 16px;
-    text-align: center;
-}
-.contactUl2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 80px;
-}
-.contactUl2But  input {
-    background-color: #AA0601;
-    color: #FFFFFF;
-    font-size: 16px;
-    padding-left: 176px;
-    padding-right: 176px;
+.contactInputs label{
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-top: 48px;
+}
+.contactInputs input{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.contactInputs input, textarea {
+    background: #FBF2F2;
+}
+.contactInputsLast {
+    text-align: center;
+}
+.contactInputsLast p {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 16px;
+}
+.contactInputsLast input {
+    background-color: #AA0601;
+    color: #FFFFFF;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 176px;
+    padding-right: 176px;
+}
+.contactInputsLast input:hover {
+    background-color: #FFFFFF;
+    color: #AA0601;
 }
 /* contact */
 
@@ -428,35 +566,34 @@ img{
     background-color: #AA0601;
 }
 .footerFirst {
-    padding-left: 312px;
-    padding-right: 312px;
-    padding-top: 60.2px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-@media(max-width: 767px){
-    .footerFirst {
-        padding-left: 36px;
-        padding-right: 40px;
-    }
-}
+
 .footerSecond {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-@media(max-width: 767px){
+@media(max-width:576px) {
     .footerSecond {
         padding-bottom: 30px;
     }
 }
+
 .footerSecond img {
     width: 48px;
-    padding-left: 32px;
+    padding: 15px;
 }
-@media(max-width: 767px){
+@media(max-width:576px) {
     .footerSecond img {
-        padding-left: 16px;
+        width: 40px;
+        padding: 5px;
     }
 }
+
 .footerSecond a {
     text-decoration: none;
     color: #FFFFFF;
@@ -467,28 +604,40 @@ img{
     justify-content: center;
     padding-bottom: 35.98px;
 }
-@media(max-width: 767px){
+@media(max-width:576px) {
     .footerThird {
         padding-bottom: 0px;
     }
-    
 }
+
+
 .footerThirdTwo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+}
+.footerThirdTwo img:hover {
+    box-shadow: 1px 3px 3px #ddd;
+
 }
 .footerThird li {
     padding-right: 48px;
 }
-@media(max-width: 767px){
+@media(max-width:576px) {
     .footerThird li {
-        padding-right: 24px;
+        padding-right: 10px;
     }
+}
+
+.footerThird li a:hover {
+    text-shadow: white 0 0px 1px, black 1px 0px 2px, white -1px 0px 2px;
 }
 .footerSecondTwo a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 36px;
+}
+.footerSecondTwo a:hover{
+    text-shadow: white 0 0px 1px, black 1px 0px 2px, white -1px 0px 2px;
 }
 .fa-phone {
     color: #FFFFFF;
@@ -500,11 +649,7 @@ img{
     font-size: 36px;
     padding-right: 6px;
 }
-@media(max-width: 767px){
-    .footerSecondTwo {
-        padding-bottom: 30px;
-    }
-}
+
 .footerSecondTwo li {
     padding-bottom: 8px;
 }
@@ -516,17 +661,42 @@ img{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+@media(max-width:576px) {
+    .footerSecondThird {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .footerSecondThird a {
     color: #FFFFFF;
     text-decoration: none;
 }
-.footerUl2_1_1 {
+.footerUlTowOneOne {
     display: flex;
     justify-content: end;
-
 }
-.footerUl2_1_1 li {
+@media(max-width:576px) {
+    .footerUlTowOneOne {
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
+.footerUlTowOneOne li {
     padding-left: 21px;
+}
+@media(max-width:576px) {
+    .footerUlTowOneOne li {
+        padding-left: 0px;
+    }
+}
+@media(max-width:576px) {
+    .footerUlTowOneOne li {
+        padding-left: 10px;
+    }
+}
+.footerUlTowOneOne a:hover {
+    text-decoration: underline;
 }
 /* footer */
 
