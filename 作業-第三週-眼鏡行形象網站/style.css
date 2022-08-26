@@ -137,7 +137,7 @@ img{
 
 /* banner */
 .banner {
-    background-image: url("/作業-第三週-眼鏡行形象網站/imgs/home-header.png");
+    background-image: url("imgs/home-header.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -150,7 +150,7 @@ img{
 }
 @media(max-width:576px) {
     .banner {
-        background-image: url("/作業-第三週-眼鏡行形象網站/imgs/home-header-sm.png");
+        background-image: url("imgs/home-header-sm.png");
         padding-right: 30px;
     }
 }
@@ -370,7 +370,7 @@ img{
 
 /* joinProduct */
 .joinProduct {
-    background-image: url(/作業-第三週-眼鏡行形象網站/imgs/index-bg.png);
+    background-image: url("imgs/index-bg.png");
     background-size: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -399,7 +399,7 @@ img{
 }
 @media(max-width:576px) {
     .joinProduct {
-        background-image: url("/作業-第三週-眼鏡行形象網站/imgs/index-bg-sm.png");
+        background-image: url("imgs/index-bg-sm.png");
         background-repeat: no-repeat;
     }
     .joinProduct h2 {
